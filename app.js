@@ -17,7 +17,7 @@ function receiveMessage(mensagem){
                 msg.setColor("#bb22e6")
                 msg.setThumbnail("https://i.pinimg.com/originals/4f/71/49/4f7149757a746c4464c97314d1a41cd1.png")
                 msg.setImage(movie.imagem)
-                msg.setDescription(movie.ano)
+                msg.setDescription('Ano de Lançamento: '+ (movie.ano))
                     
                 
                 
