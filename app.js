@@ -4,6 +4,7 @@ const Discord = require('discord.js')
 const bot = new Discord.Client()
 const movies = require('./films.js')
 const movieController = require("./movieController")
+require ('dotenv/config')
 
 //bot.on('message', receiveMessage)
 
@@ -74,6 +75,6 @@ const receiveMessage = async (mensagem) => {
 }
 bot.on('message', receiveMessage)
 
-bot.login('ODY0NjczODYwNTczMzMxNDc5.YO44SQ.jCh7InxBtHp5OWVwLmywliBOZS8')
+bot.login(process.env.app_token)
 
 
